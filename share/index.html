@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>KawaiiChef</title>
-	</head>
-	<body>
-		<text id="note"></text>
-		<script type="text/javascript">
-			var ua = window.navigator.userAgent.toLocaleLowerCase()
-			if(/iphone|ipad|ipod/.test(ua)){
-				window.location.href="https://apps.apple.com/app/id1503887037"
-			}else{
-				document.getElementById("note").innerHTML="no support"
-			}
-		</script>
-	</body>
+  <head>
+    <title>Kawaii Chef</title>
+  </head>
+  <style>
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+</style>
+  <body id = "in">
+    <script type="text/javascript">
+      var ua = window.navigator.userAgent.toLocaleLowerCase()
+      if(/iphone|ipad|ipod/.test(ua)){
+        window.location.href="https://apps.apple.com/app/id1503887037"
+      }else{
+        document.getElementById("in").innerHTML ="<div class=\"center\" style=\"font-size:40px\"><nobr>Android version will come soon!</nobr></div><a class=\"center\" href=\"https://apps.apple.com/app/id1503887037\" style=\"font-size:30px\"><br><br><br><nobr>click to appstore</nobr></a>"
+      }
+    </script>
+  </body>
 </html>
